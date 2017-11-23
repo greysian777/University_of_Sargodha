@@ -3,9 +3,11 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 //
 // // Read in a page
-for($loop = 0; $loop <= 45; $loop+=15)
+for($loop = 0; $loop <= 15; $loop+=15)
 {
-  echo "$loop..\n";
-}?>
+ $LINK =  file_get_html('https://www.uos.edu.pk/About/alumni_directory'.$loop);
+  echo $LINK;
+}
+?>
 
 
