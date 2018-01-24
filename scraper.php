@@ -9,7 +9,7 @@ for($loop = 0; $loop <= 15; $loop+=15)
   if ($LINK)
    {
 			//	Paginate all 'View' buttons
-			foreach ($LINK->find("//*[@id='main_content']/div/div[1]/table") as $element) 
+			foreach ($LINK->find("//*[@id='main_content']/div/div[1]/table/tbody/tr") as $element) 
     {
      echo  $element; 
     }
