@@ -19,7 +19,8 @@ $url = 'https://www.uos.edu.pk/About/alumni_directory/'.$loop;
 			$passy	=	$element->find('td[4]', 0)->plaintext;
 				
 				
-				
+				if($rollno != "" || $rollno != NUll)
+				{
 				 $record = array( 'rollno' =>$rollno, 
 		   'fname' => $fname,
 		   'lname' => $lname, 
@@ -29,7 +30,7 @@ $url = 'https://www.uos.edu.pk/About/alumni_directory/'.$loop;
 						
 						
            scraperwiki::save(array('fname','lname','prog','passy','url'), $record);
-				
+				}
 				
     }
     
