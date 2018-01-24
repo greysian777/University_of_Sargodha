@@ -11,7 +11,8 @@ for($loop = 0; $loop <= 15; $loop+=15)
 			//	Paginate all 'View' buttons
 			foreach ($LINK->find("//*[@id='main_content']/div/div[1]/table/tbody/tr") as $element) 
     {
-     echo  $element; 
+     			$rollno	=	$element->find('td[0]', 0);
+				echo "$rollno\n";
     }
     
   }
